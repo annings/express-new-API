@@ -1,0 +1,16 @@
+{
+  "name": "express-new-API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:annings/express-new-API.git",
+  "author": "anning <1013168652@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "create": "apidoc -i router/ -o apidoc/ && cross-env NODE_ENV=development nodemon index.js --watch ./"
+  }
+}
